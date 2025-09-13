@@ -3,7 +3,7 @@ public class Main {
 		float tinggiBadan = 170f;
 		double beratBadan = 55.7;
 		
-		System.out.println("Tinggi Badan \t= " + tinggiBadan);
-		System.out.println("Berat Badan \t= " + beratBadan);
+		System.out.println("Tinggi Badan \t= " + tinggiBadan + "cm");
+		System.out.println("Berat Badan \t= " + beratBadan + "kg");
 	}
 }

@@ -7,12 +7,12 @@ public class Day49{
         System.out.println("Masukkan nama");
         String nama = input.nextLine();
         System.out.println("_____________________");
-        System.out.println(" 1 untuk laki- laki");
-        System.out.println(" 2 untuk perempuan");
-        System.out.println("Masukkan angka");
-        int jenis = input.nextInt();
+        System.out.println(" L untuk laki- laki");
+        System.out.println(" P untuk perempuan");
+        System.out.println("Masukkan ");
+        char jenis = input.next().charAt(0);
         
-        String hasil = (jenis==1)? "Laki-laki":"Perempuan";
+        String hasil = (jenis=='L')? "Laki-laki":"Perempuan";
         System.out.println("Nama          : " + nama);
         System.out.println("Jenis Kelamin : " + hasil);
         

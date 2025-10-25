@@ -12,7 +12,7 @@ public class Day49{
         System.out.println("Masukkan ");
         char jenis = input.next().charAt(0);
         
-        String hasil = (jenis=='L')? "Laki-laki":"Perempuan";
+        String hasil = (jenis=='L')? "Laki-laki": (jenis=='P')? "Perempuan":"inputan salah";
         System.out.println("Nama          : " + nama);
         System.out.println("Jenis Kelamin : " + hasil);
         

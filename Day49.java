@@ -4,26 +4,14 @@ public class Day49{
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         
-        System.out.println("Masukkan nama");
-        String nama = input.nextLine();
-        System.out.println("_____________________");
-        System.out.println(" L untuk laki- laki");
-        System.out.println(" P untuk perempuan");
-        System.out.println("Masukkan ");
-        char jenis = input.next().charAt(0);
+        System.out.println("Apakah anda mahasiswa (true/false)");
+        boolean status = input.nextBoolean();
         
-        String hasil = (jenis=='L')? "Laki-laki": (jenis=='P')? "Perempuan":"inputan salah";
-        System.out.println("Nama          : " + nama);
-        System.out.println("Jenis Kelamin : " + hasil);
+        String hasil = (status==true)? "Mahasiswa":"Bukan Mahasiswa";
+        System.out.println("Status : " + hasil);
         
         
-        
-        
-        
-        
-        
-        
-        
+             
         
     }
 }

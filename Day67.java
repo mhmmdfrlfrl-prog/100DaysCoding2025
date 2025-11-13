@@ -7,8 +7,6 @@ public class ngoding67 {
         System.out.println("Masukkan N:");
         int n = input.nextInt();
         
-        int total = 1;
-        
         for(int i = 1; i<=n; i++){
             
             System.out.print("X");

@@ -14,27 +14,24 @@ public class Day100 {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         
+        String kata = input.nextLine();
         
-        int n = input.nextInt();
+        boolean I = false;
+        boolean S = false;
         
-        int [] array = new int [n];
-        
-        for (int i = 0; i < n; i++) {
-            array [i] = input.nextInt();
+        for (int i = 0; i < kata.length(); i++) {
+            char huruf = kata.charAt(i);
+            
+            if(huruf=='I'){
+                I = true; 
+            }else if(huruf=='S' && I){
+                S = true;
+            }else if(huruf=='C' && I && S){
+                System.out.println("CANTIK");
+                return;
+            }
+            
         }
-        
-        int p = array [0];
-        int panjang = array[p%n];
-        
-        String hasil = "";
-        int i = 0;
-        
-        while (hasil.length() < panjang){
-            hasil += array[i%n];
-            i++;
-        }
-        
-        System.out.print(hasil.substring(0, panjang));
-        System.out.println();
+        System.out.println("TIDAK CANTIK");
      }
 }
